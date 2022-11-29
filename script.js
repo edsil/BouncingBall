@@ -35,13 +35,13 @@ window.onload = function () {
 };
 
 function goAgain() {
-    var startTimer = 0;
-    var lastUpdateTimer = 0;
-    var frame = 0;
-    var momentTimer = 0;
-    var momentFrame = 0;
-    var fps = 0;
-    var momentFPS = 0;
+    startTimer = 0;
+    lastUpdateTimer = 0;
+    frame = 0;
+    momentTimer = 0;
+    momentFrame = 0;
+    fps = 0;
+    momentFPS = 0;
     const elem = document.getElementById("nballs");
     nBalls = +elem.value;
     balls.length = 0;
