@@ -103,6 +103,7 @@ function updateDraw(ts) {
     txt.push("Last Second FPS: " + Math.round(momentFPS));
     txt.push("Total Frames: " + ((frame < 1000) ? (frame) : (Math.round(frame / 1000) + "k")));
     txt.push("Seconds: " + Math.round((ts - startTimer) / 1000));
+    txt.push("Balls: " + balls.length)
     for (const t of txt) boxWidth = Math.max(boxWidth, t.length);
     var boxHeight = txt.length;
     var lettSize = 15;
