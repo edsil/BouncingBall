@@ -83,10 +83,9 @@ function trim(value, min, max) {
 
 function updateDraw(ts) {
     frame += 1;
-    momentFrame += 1;
     if ((ts - momentTimer) > 1000) {
         momentFPS = Math.round(1000 * (frame - momentFrame) / (ts - momentTimer));
-        momentFrame = 1;
+        momentFrame = frame;
         momentTimer = ts;
     }
     ctx.clearRect(0, 0, w, h);
